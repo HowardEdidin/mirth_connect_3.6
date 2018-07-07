@@ -39,9 +39,7 @@ RUN \
   cp -af /tmp/R20gz /opt/mirth-connect/custom-lib/ && \
   cd /opt/mirth-connect/custom-lib/ && \
   tar -xzvf r20.gz && \
-  rm -f r20.gz && \
-  cp -af /tmp/cda1.gz /opt/mirth-connect/custom-lib/ && \
-  cd /opt/mirth-connect/custom-lib/ && \
+  rm -f r20.gz && \ 
   tar -xzvf cda1.gz && \
   rm -f cda1.gz 
 
