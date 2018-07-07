@@ -26,6 +26,8 @@ RUN \
 COPY mirth.properties /tmp
 COPY extension.properties /tmp
 COPY fhir.tar.gz /tmp
+COPY R20120502.tar.gz /tmp
+COPY R20121220.tar.gz /tmp
 
 RUN \
   cp -af /tmp/mirth.properties /opt/mirth-connect/conf/ && \
@@ -33,7 +35,15 @@ RUN \
   cp -af /tmp/fhir.tar.gz /opt/mirth-connect/extensions/ && \
   cd /opt/mirth-connect/extensions/ && \
   tar -xzvf fhir.tar.gz && \
-  rm -f fhir.tar.gz
+  rm -f fhir.tar.gz && \
+  cp -af /tmp/R20120502.tar.gz /opt/mirth-connect/custom-lib/ && \
+  cd /opt/mirth-connect/custom-lib/ && \
+  tar -xzvf R20120502.tar.gz && \
+  rm -f R20120502.tar.gz && \
+  cp -af /tmp/R20121220.tar.gz /opt/mirth-connect/custom-lib/ && \
+  cd /opt/mirth-connect/custom-lib/ && \
+  tar -xzvf R20121220.tar.gz && \
+  rm -f R20121220.tar.gz 
 
 
 WORKDIR /opt/mirth-connect
