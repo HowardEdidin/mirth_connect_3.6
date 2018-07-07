@@ -27,7 +27,7 @@ COPY mirth.properties /tmp
 COPY extension.properties /tmp
 COPY fhir.tar.gz /tmp
 COPY cda1.gz /tmp
-COPY R20.gz /tmp
+COPY r20.gz /tmp
 
 RUN \
   cp -af /tmp/mirth.properties /opt/mirth-connect/conf/ && \
@@ -38,8 +38,8 @@ RUN \
   rm -f fhir.tar.gz && \
   cp -af /tmp/R20gz /opt/mirth-connect/custom-lib/ && \
   cd /opt/mirth-connect/custom-lib/ && \
-  tar -xzvf R20.gz && \
-  rm -f R20.gz && \
+  tar -xzvf r20.gz && \
+  rm -f r20.gz && \
   cp -af /tmp/cda1.gz /opt/mirth-connect/custom-lib/ && \
   cd /opt/mirth-connect/custom-lib/ && \
   tar -xzvf cda1.gz && \
