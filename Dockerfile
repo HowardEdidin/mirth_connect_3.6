@@ -26,7 +26,7 @@ RUN \
 COPY mirth.properties /tmp
 COPY extension.properties /tmp
 COPY fhir.tar.gz /tmp
-COPY cda1.gz /tmp
+COPY r19.gz /tmp
 COPY r20.gz /tmp
 
 RUN \
