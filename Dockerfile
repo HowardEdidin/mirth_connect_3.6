@@ -26,8 +26,8 @@ RUN \
 COPY mirth.properties /tmp
 COPY extension.properties /tmp
 COPY fhir.tar.gz /tmp
-COPY r19.gz /tmp
-COPY r20.gz /tmp
+COPY r19.tar.gz /tmp
+COPY r20.tar.gz /tmp
 
 RUN \
   cp -af /tmp/mirth.properties /opt/mirth-connect/conf/ && \
