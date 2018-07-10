@@ -34,7 +34,8 @@ RUN \
  cp -af /tmp/fhir.tar.gz /opt/mirth-connect/extensions/ && \
  cd /opt/mirth-connect/extensions/ && \
  tar -xzvf fhir.tar.gz && \
- rm -f fhir.tar.gz && \
+ rm -f fhir.tar.gz 
+ 
  COPY net.sourceforge.lpg.lpgjavaruntime_1.1.0.v200803061910.jar /opt/mirth-connect/custom-lib/ 
  COPY org.eclipse.emf.common_2.5.0.v200906151043.jar /opt/mirth-connect/custom-lib/ 
  COPY org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar /opt/mirth-connect/custom-lib/ 
