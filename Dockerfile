@@ -32,12 +32,12 @@ COPY org.eclipse.emf.common_2.5.0.v200906151043.jar /tmp
 COPY org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar /tmp
 COPY org.eclipse.emf.ecore_2.5.0.v200906151043.jar /tmp
 COPY org.eclipse.ocl.ecore_1.3.0.v200905271400.jar /tmp
-COPY org.eclipse.ocl_1.3.0.v200905271400.jar /opt/mirth-connect/custom-lib/
+COPY org.eclipse.ocl_1.3.0.v200905271400.jar /tmp
 COPY org.openhealthtools.mdht.emf.runtime_1.0.0.201212201425.jar /tmp
-COPY org.openhealthtools.mdht.uml.cda_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/
+COPY org.openhealthtools.mdht.uml.cda_1.2.0.201212201425.jar /tmp
 COPY org.openhealthtools.mdht.uml.hl7.datatypes_1.2.0.201212201425.jar /tmp
 COPY org.openhealthtools.mdht.uml.hl7.rim_1.2.0.201212201425.jar /tmp
-COPY org.openhealthtools.mdht.uml.hl7.vocab_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/
+COPY org.openhealthtools.mdht.uml.hl7.vocab_1.2.0.201212201425.jar /tmp
 
 
 RUN \
