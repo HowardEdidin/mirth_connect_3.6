@@ -51,7 +51,7 @@ RUN \
  cp -af /tmp/org.openhealthtools.mdht.uml.cda_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/ && \
  cp -af /tmp/org.openhealthtools.mdht.uml.hl7.datatypes_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/ && \
  cp -af /tmp/org.openhealthtools.mdht.uml.hl7.rim_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/ && \
- cp -af /tmp/org.openhealthtools.mdht.uml.hl7.vocab_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/  
+ cp -af /tmp/org.openhealthtools.mdht.uml.hl7.vocab_1.2.0.201212201425.jar /opt/mirth-connect/custom-lib/  && \
  cp -af /tmp/mirth.properties /opt/mirth-connect/conf/ && \
  cp -af /tmp/extension.properties /opt/mirth-connect/appdata/ && \
  cp -af /tmp/fhir.tar.gz /opt/mirth-connect/extensions/ && \ 
