@@ -21,7 +21,7 @@ RUN \
   tar xvzf mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
   rm -f mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
   mv Mirth\ Connect/* /opt/mirth-connect/ && \
-  chown -R mirth /opt/mirth-connect && \
+  chown -R mirth /opt/mirth-connect
   
 
 COPY mirth.properties /tmp
