@@ -17,7 +17,7 @@ VOLUME /opt/mirth-connect/appdata
 
 RUN \
   cd /tmp && \
-  wget http://downloads.mirthcorp.com/connect/$MIRTH_CONNECT_VERSION/mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
+  wget http://downloads.mirthcorp.com/archive/connect/$MIRTH_CONNECT_VERSION/mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
   tar xvzf mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
   rm -f mirthconnect-$MIRTH_CONNECT_VERSION-unix.tar.gz && \
   mv Mirth\ Connect/* /opt/mirth-connect/ && \
